@@ -1,0 +1,864 @@
+/* Custom CSS for Manar Al Hikamah Trading LLC */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Styles */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu {
+    transform: translateY(-10px);
+}
+
+/* Logo Styles */
+.logo-icon {
+    transition: transform 0.3s ease;
+}
+
+.logo-icon:hover {
+    transform: scale(1.05);
+}
+
+/* Hero Section Animations */
+.floating-element {
+    animation: float 6s ease-in-out infinite;
+}
+
+.floating-element:nth-child(2) {
+    animation-delay: -2s;
+}
+
+.floating-element:nth-child(3) {
+    animation-delay: -4s;
+}
+
+.floating-element:nth-child(4) {
+    animation-delay: -1s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Hero Background Animations */
+@keyframes floatBeam {
+    0%, 100% {
+        transform: translateX(0) translateY(0) scaleX(1);
+        opacity: 0.3;
+    }
+    25% {
+        transform: translateX(20px) translateY(-10px) scaleX(1.2);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translateX(40px) translateY(5px) scaleX(0.8);
+        opacity: 0.2;
+    }
+    75% {
+        transform: translateX(10px) translateY(-5px) scaleX(1.1);
+        opacity: 0.4;
+    }
+}
+
+@keyframes pulseOrb {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.6;
+    }
+}
+
+@keyframes floatShape {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.2;
+    }
+    25% {
+        transform: translateY(-30px) rotate(90deg);
+        opacity: 0.4;
+    }
+    50% {
+        transform: translateY(-15px) rotate(180deg);
+        opacity: 0.3;
+    }
+    75% {
+        transform: translateY(-40px) rotate(270deg);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0) rotate(360deg);
+        opacity: 0.2;
+    }
+}
+
+@keyframes riseParticle {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) translateX(20px);
+        opacity: 0;
+    }
+}
+
+@keyframes shimmerLine {
+    0%, 100% {
+        opacity: 0.1;
+        transform: rotate(var(--rotation, 25deg)) scaleX(1);
+    }
+    50% {
+        opacity: 0.4;
+        transform: rotate(var(--rotation, 25deg)) scaleX(1.3);
+    }
+}
+
+/* Material-Themed Animations */
+@keyframes floatSteel {
+    0%, 100% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 0.8;
+    }
+    25% {
+        transform: translateY(-15px) translateX(10px) rotate(2deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-8px) translateX(20px) rotate(-1deg);
+        opacity: 0.7;
+    }
+    75% {
+        transform: translateY(-20px) translateX(5px) rotate(1deg);
+        opacity: 0.9;
+    }
+}
+
+@keyframes floatPipe {
+    0%, 100% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 0.6;
+    }
+    33% {
+        transform: translateY(-12px) translateX(15px) rotate(5deg);
+        opacity: 0.8;
+    }
+    66% {
+        transform: translateY(-6px) translateX(-10px) rotate(-3deg);
+        opacity: 0.5;
+    }
+}
+
+@keyframes floatScaffold {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.7;
+    }
+    25% {
+        transform: translateY(-20px) translateX(8px);
+        opacity: 0.9;
+    }
+    50% {
+        transform: translateY(-10px) translateX(-5px);
+        opacity: 0.6;
+    }
+    75% {
+        transform: translateY(-25px) translateX(12px);
+        opacity: 0.8;
+    }
+}
+
+@keyframes floatTiles {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg) scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: translateY(-15px) rotate(5deg) scale(1.05);
+        opacity: 1;
+    }
+}
+
+@keyframes floatWood {
+    0%, 100% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateY(-10px) translateX(8px) rotate(3deg);
+        opacity: 0.9;
+    }
+}
+
+@keyframes floatMetal {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.5;
+    }
+    25% {
+        transform: translateY(-8px) rotate(2deg);
+        opacity: 0.7;
+    }
+    75% {
+        transform: translateY(-12px) rotate(-2deg);
+        opacity: 0.6;
+    }
+}
+
+@keyframes floatBlock {
+    0%, 100% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 0.6;
+    }
+    33% {
+        transform: translateY(-18px) translateX(5px) rotate(3deg);
+        opacity: 0.8;
+    }
+    66% {
+        transform: translateY(-8px) translateX(-8px) rotate(-2deg);
+        opacity: 0.5;
+    }
+}
+
+@keyframes floatRebar {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translateY(-15px) translateX(10px);
+        opacity: 0.8;
+    }
+}
+
+@keyframes riseSpark {
+    0% {
+        transform: translateY(0) translateX(0) scale(1);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-40vh) translateX(15px) scale(0.8);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-80vh) translateX(-10px) scale(0.3);
+        opacity: 0;
+    }
+}
+
+/* Additional Material Animations */
+@keyframes swingHook {
+    0%, 100% {
+        transform: rotate(-5deg);
+        transform-origin: top center;
+    }
+    50% {
+        transform: rotate(5deg);
+        transform-origin: top center;
+    }
+}
+
+@keyframes spinBolt {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes measurePulse {
+    0%, 100% {
+        opacity: 0.2;
+        transform: scaleX(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scaleX(1.1);
+    }
+}
+
+@keyframes weldFlash {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    25% {
+        opacity: 0.8;
+        transform: scale(1.3);
+    }
+    50% {
+        opacity: 0.2;
+        transform: scale(0.9);
+    }
+    75% {
+        opacity: 0.9;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes floatDust {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.5;
+    }
+    50% {
+        transform: translateY(-30vh) translateX(30px);
+        opacity: 0.3;
+    }
+    90% {
+        opacity: 0.4;
+    }
+    100% {
+        transform: translateY(-60vh) translateX(-20px);
+        opacity: 0;
+    }
+}
+
+/* Building Animation Keyframes */
+@keyframes buildingRise {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 0.2;
+    }
+    50% {
+        transform: translateY(-8px);
+        opacity: 0.25;
+    }
+}
+
+@keyframes buildingMorph1 {
+    0%, 100% {
+        border-radius: 8px 8px 0 0;
+        transform: scaleY(1);
+    }
+    25% {
+        border-radius: 4px 4px 0 0;
+        transform: scaleY(1.05);
+    }
+    50% {
+        border-radius: 12px 12px 0 0;
+        transform: scaleY(0.98);
+    }
+    75% {
+        border-radius: 2px 2px 0 0;
+        transform: scaleY(1.02);
+    }
+}
+
+@keyframes buildingMorph2 {
+    0%, 100% {
+        transform: scaleX(1) scaleY(1);
+    }
+    33% {
+        transform: scaleX(1.05) scaleY(0.98);
+    }
+    66% {
+        transform: scaleX(0.98) scaleY(1.03);
+    }
+}
+
+@keyframes buildingMorph3 {
+    0%, 100% {
+        transform: scaleY(1);
+        filter: brightness(1);
+    }
+    50% {
+        transform: scaleY(1.03);
+        filter: brightness(1.1);
+    }
+}
+
+@keyframes buildingMorph4 {
+    0%, 100% {
+        border-radius: 6px 6px 0 0;
+    }
+    50% {
+        border-radius: 2px 2px 0 0;
+    }
+}
+
+@keyframes buildingMorph5 {
+    0%, 100% {
+        transform: scaleY(1) scaleX(1);
+    }
+    50% {
+        transform: scaleY(1.05) scaleX(0.98);
+    }
+}
+
+@keyframes constructBuilding {
+    0%, 100% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
+@keyframes steelFrameGrow {
+    0%, 100% {
+        transform: scaleY(1);
+    }
+    25% {
+        transform: scaleY(1.02);
+    }
+    50% {
+        transform: scaleY(0.98);
+    }
+    75% {
+        transform: scaleY(1.01);
+    }
+}
+
+@keyframes windowFlicker {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+
+@keyframes beaconBlink {
+    0%, 100% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+    50% {
+        opacity: 0.3;
+        transform: translateX(-50%) scale(0.8);
+    }
+}
+
+@keyframes craneSwing {
+    0%, 100% {
+        transform: rotate(-8deg);
+    }
+    50% {
+        transform: rotate(8deg);
+    }
+}
+
+@keyframes skylinePulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scaleY(1.02);
+    }
+}
+
+/* Hero Grid Animation */
+.hero-grid {
+    animation: gridPulse 10s ease-in-out infinite;
+}
+
+@keyframes gridPulse {
+    0%, 100% {
+        opacity: 0.1;
+        background-size: 60px 60px;
+    }
+    50% {
+        opacity: 0.15;
+        background-size: 65px 65px;
+    }
+}
+
+/* Hero Geometric Shape Animation */
+#geometricShape {
+    will-change: transform, left, top;
+    backface-visibility: hidden;
+}
+
+#shapeInner {
+    will-change: border-radius, border-width, border-color;
+    background: linear-gradient(135deg, rgba(30, 58, 95, 0.1) 0%, rgba(249, 115, 22, 0.05) 100%);
+}
+
+#shapeGlow {
+    will-change: opacity;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    #geometricShape,
+    .floating-beam,
+    .glow-orb,
+    .floating-shape,
+    .particle,
+    .diagonal-line,
+    .hero-grid,
+    .steel-beam,
+    .pipe,
+    .scaffold,
+    .tiles,
+    .wood-plank,
+    .metal-sheet,
+    .block,
+    .rebar,
+    .spark,
+    .crane-hook,
+    .bolt,
+    .measure-line,
+    .weld-arc,
+    .dust,
+    .building,
+    .tower,
+    .warehouse,
+    .glass-tower,
+    .steel-frame,
+    .residential,
+    .small-tower,
+    .skyline,
+    .window {
+        animation: none !important;
+    }
+    
+    .hero-content {
+        animation: none !important;
+    }
+}
+
+/* Hero Content Animation */
+.hero-content {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Interactive Services Animation */
+.service-item {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-item:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Material and Service Cards */
+.material-card, .service-card, .certification-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.material-card:hover, .service-card:hover, .certification-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Navbar Scroll Effect */
+.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Hover Effects */
+.btn-hover {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn-hover:hover::before {
+    left: 100%;
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section p {
+        font-size: 1.125rem;
+    }
+    
+    .interactive-services {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .interactive-services {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f97316;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ea580c;
+}
+
+/* Parallax Effect */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Fade In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Pulse Animation for CTA Buttons */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(249, 115, 22, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(249, 115, 22, 0);
+    }
+}
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(135deg, #1e3a5f, #f97316);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Card Hover Glow Effect */
+.card-glow:hover {
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
+}
+
+/* Typography Enhancements */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile Menu Animation */
+.mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.mobile-menu.active {
+    max-height: 500px;
+}
+
+/* Form Styles */
+.form-input {
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.15);
+}
+
+/* Success and Error Messages */
+.alert {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    animation: slideIn 0.3s ease-out;
+}
+
+.alert-success {
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.alert-error {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading States */
+.btn-loading {
+    position: relative;
+    color: transparent;
+}
+
+.btn-loading::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+/* Image Hover Effects */
+.image-hover {
+    overflow: hidden;
+}
+
+.image-hover img {
+    transition: transform 0.3s ease;
+}
+
+.image-hover:hover img {
+    transform: scale(1.1);
+}
+
+/* Counter Animation */
+.counter {
+    font-variant-numeric: tabular-nums;
+}
+
+/* Testimonial Styles */
+.testimonial-card {
+    position: relative;
+}
+
+.testimonial-card::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 4rem;
+    color: #f97316;
+    font-family: serif;
+    line-height: 1;
+}
+
+/* Progress Bar */
+.progress-bar {
+    height: 4px;
+    background: linear-gradient(90deg, #f97316, #ea580c);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+/* Sticky Elements */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+}

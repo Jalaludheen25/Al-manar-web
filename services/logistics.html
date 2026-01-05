@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistics & Distribution - Manar Al Hikamah Trading LLC</title>
+    <meta name="description"
+        content="Reliable logistics and distribution services ensuring safe and timely delivery of construction materials across the UAE.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-navy': '#1e3a5f',
+                        'brand-orange': '#f97316',
+                        'brand-light': '#f8fafc',
+                        'brand-gray': '#64748b'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="../index.html" class="flex items-center gap-2 group">
+                        <div class="logo-icon relative w-10 h-10 flex items-center justify-center">
+                            <div class="absolute inset-0 flex items-end justify-center gap-0.5">
+                                <div
+                                    class="w-2 h-6 bg-gradient-to-t from-brand-navy to-brand-navy/80 rounded-t-sm group-hover:h-7 transition-all duration-300">
+                                </div>
+                                <div
+                                    class="w-3 h-8 bg-gradient-to-t from-brand-orange to-brand-orange/80 rounded-t-sm group-hover:h-9 transition-all duration-300">
+                                </div>
+                                <div
+                                    class="w-2 h-5 bg-gradient-to-t from-brand-navy to-brand-navy/80 rounded-t-sm group-hover:h-6 transition-all duration-300">
+                                </div>
+                            </div>
+                            <div class="absolute top-1 left-0 right-0 h-0.5 bg-brand-orange/60"></div>
+                        </div>
+                        <div class="hidden sm:flex flex-col leading-none">
+                            <span class="text-brand-navy font-bold text-sm tracking-tight">MANAR AL HIKAMAH</span>
+                            <span class="text-brand-orange text-[10px] font-medium tracking-wider">TRADING LLC</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="hidden md:flex space-x-4">
+                    <a href="../index.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                    <a href="../about.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                    <div class="relative dropdown">
+                        <button
+                            class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                            Materials <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div
+                            class="dropdown-menu absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg py-1 opacity-0 invisible transition-all duration-200">
+                            <a href="../materials/steel-products.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Steel
+                                & Basic Steel Products</a>
+                            <a href="../materials/construction-materials.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Building
+                                & Construction Materials</a>
+                            <a href="../materials/metal-products.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Building
+                                Metal Products</a>
+                            <a href="../materials/tiles-flooring.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Tiles
+                                & Flooring Materials</a>
+                            <a href="../materials/pipes-fittings.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Pipes
+                                & Fittings</a>
+                            <a href="../materials/scaffolds.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Scaffolds</a>
+                            <a href="../materials/wooden-products.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Wooden
+                                Products</a>
+                        </div>
+                    </div>
+                    <div class="relative dropdown">
+                        <button class="text-brand-orange px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                            Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div
+                            class="dropdown-menu absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg py-1 opacity-0 invisible transition-all duration-200">
+                            <a href="trading-solutions.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Trading
+                                Solutions</a>
+                            <a href="supply-chain.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Supply
+                                Chain Management</a>
+                            <a href="logistics.html"
+                                class="block px-4 py-2 text-sm text-brand-orange bg-brand-light">Logistics &
+                                Distribution</a>
+                            <a href="consulting.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Project
+                                Consulting</a>
+                        </div>
+                    </div>
+                    <a href="../certifications.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Certifications</a>
+                    <a href="../gallery.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Gallery</a>
+                    <a href="../contact.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-brand-navy to-blue-900 relative overflow-hidden">
+        <!-- Hero Background Image -->
+        <div class="absolute inset-0 opacity-20">
+            <img src="../assets/images/Logistics & Distribution -1.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-bold text-white mb-4">Logistics & Distribution</h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">Reliable logistics network ensuring safe and timely
+                delivery across the UAE</p>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-brand-navy mb-6">Comprehensive Logistics Solutions</h2>
+                    <p class="text-brand-gray text-lg leading-relaxed mb-6">
+                        Our logistics and distribution services form the backbone of efficient material delivery across
+                        the UAE. We operate a sophisticated network of warehouses, transportation fleet, and
+                        distribution centers to ensure your materials reach their destination safely and on time.
+                    </p>
+                    <p class="text-brand-gray text-lg leading-relaxed mb-6">
+                        From warehousing and inventory management to last-mile delivery and tracking, our integrated
+                        logistics solutions are designed to optimize efficiency, reduce costs, and provide complete
+                        visibility throughout the supply chain. We handle everything so you can focus on your core
+                        business.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="bg-brand-orange text-white px-4 py-2 rounded-full text-sm font-medium">Real-time
+                            Tracking</span>
+                        <span class="bg-brand-orange text-white px-4 py-2 rounded-full text-sm font-medium">Safe
+                            Handling</span>
+                        <span class="bg-brand-orange text-white px-4 py-2 rounded-full text-sm font-medium">On-time
+                            Delivery</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                    <img src="../assets/images/Logistics & Distribution -1.jpg" alt="Logistics Warehouse"
+                        class="h-48 w-full object-cover rounded-lg shadow-lg">
+                    <img src="../assets/images/Logistics & Distribution-2.jpg" alt="Distribution Center"
+                        class="h-48 w-full object-cover rounded-lg shadow-lg">
+                    <img src="../assets/images/Logistics & Distribution-3.jpg" alt="Delivery Trucks"
+                        class="h-48 w-full object-cover rounded-lg shadow-lg">
+                    <img src="../assets/images/Logistics & Distribution-4.jpg" alt="Shipping Operations"
+                        class="h-48 w-full object-cover rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Components -->
+    <section class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-brand-navy text-center mb-16">Logistics & Distribution Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-brand-orange rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-warehouse text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-4">Warehousing Solutions</h3>
+                    <p class="text-brand-gray mb-4">
+                        State-of-the-art warehousing facilities with climate control, security systems, and advanced
+                        inventory management capabilities.
+                    </p>
+                    <ul class="text-brand-gray text-sm space-y-1">
+                        <li>• Climate-controlled storage</li>
+                        <li>• 24/7 security monitoring</li>
+                        <li>• Inventory management systems</li>
+                        <li>• Material handling equipment</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-brand-orange rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-truck text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-4">Transportation Management</h3>
+                    <p class="text-brand-gray mb-4">
+                        Comprehensive transportation services with modern fleet, experienced drivers, and specialized
+                        equipment for different material types.
+                    </p>
+                    <ul class="text-brand-gray text-sm space-y-1">
+                        <li>• Modern vehicle fleet</li>
+                        <li>• Specialized transport equipment</li>
+                        <li>• Professional drivers</li>
+                        <li>• Route optimization</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-brand-orange rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-4">Last-Mile Delivery</h3>
+                    <p class="text-brand-gray mb-4">
+                        Efficient last-mile delivery services ensuring materials reach your project site safely and
+                        according to your schedule requirements.
+                    </p>
+                    <ul class="text-brand-gray text-sm space-y-1">
+                        <li>• Scheduled deliveries</li>
+                        <li>• Site-specific requirements</li>
+                        <li>• Unloading assistance</li>
+                        <li>• Delivery confirmation</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-brand-orange rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-satellite text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-4">Real-Time Tracking</h3>
+                    <p class="text-brand-gray mb-4">
+                        Advanced tracking systems providing real-time visibility of your shipments from warehouse to
+                        final destination.
+                    </p>
+                    <ul class="text-brand-gray text-sm space-y-1">
+                        <li>• GPS tracking systems</li>
+                        <li>• Real-time updates</li>
+                        <li>• Delivery notifications</li>
+                        <li>• Online tracking portal</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-brand-orange rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-boxes text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-4">Packaging & Handling</h3>
+                    <p class="text-brand-gray mb-4">
+                        Professional packaging and material handling services to ensure product integrity during
+                        transportation and storage.
+                    </p>
+                    <ul class="text-brand-gray text-sm space-y-1">
+                        <li>• Protective packaging</li>
+                        <li>• Safe handling procedures</li>
+                        <li>• Quality control checks</li>
+                        <li>• Damage prevention</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-brand-orange rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-calendar-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-4">Scheduled Deliveries</h3>
+                    <p class="text-brand-gray mb-4">
+                        Flexible scheduling options to align deliveries with your project timeline and site requirements
+                        for optimal efficiency.
+                    </p>
+                    <ul class="text-brand-gray text-sm space-y-1">
+                        <li>• Flexible scheduling</li>
+                        <li>• Just-in-time delivery</li>
+                        <li>• Project coordination</li>
+                        <li>• Emergency deliveries</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet & Facilities -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-brand-navy text-center mb-16">Our Fleet & Facilities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-brand-light rounded-lg p-8 mb-4">
+                        <i class="fas fa-warehouse text-brand-orange text-4xl mb-4"></i>
+                        <h4 class="text-lg font-bold text-brand-navy">Modern Warehouses</h4>
+                    </div>
+                    <p class="text-brand-gray text-sm">50,000+ sq ft of climate-controlled storage space</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-brand-light rounded-lg p-8 mb-4">
+                        <i class="fas fa-truck text-brand-orange text-4xl mb-4"></i>
+                        <h4 class="text-lg font-bold text-brand-navy">Transport Fleet</h4>
+                    </div>
+                    <p class="text-brand-gray text-sm">50+ vehicles including specialized transport equipment</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-brand-light rounded-lg p-8 mb-4">
+                        <i class="fas fa-map-marked-alt text-brand-orange text-4xl mb-4"></i>
+                        <h4 class="text-lg font-bold text-brand-navy">Coverage Area</h4>
+                    </div>
+                    <p class="text-brand-gray text-sm">Complete UAE coverage with strategic distribution centers</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-brand-light rounded-lg p-8 mb-4">
+                        <i class="fas fa-clock text-brand-orange text-4xl mb-4"></i>
+                        <h4 class="text-lg font-bold text-brand-navy">Operating Hours</h4>
+                    </div>
+                    <p class="text-brand-gray text-sm">24/7 operations for urgent delivery requirements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology -->
+    <section class="py-20 bg-brand-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Advanced Logistics Technology</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Leveraging cutting-edge technology for efficient and transparent logistics operations.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-brand-orange rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-mobile-alt text-white text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Mobile Tracking App</h4>
+                    <p class="text-gray-300">Real-time shipment tracking and delivery updates through our mobile
+                        application.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-brand-orange rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-robot text-white text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Automated Systems</h4>
+                    <p class="text-gray-300">Automated warehouse management and inventory control systems for accuracy
+                        and efficiency.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-brand-orange rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line text-white text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Analytics Dashboard</h4>
+                    <p class="text-gray-300">Comprehensive analytics and reporting dashboard for performance monitoring
+                        and optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-brand-navy text-center mb-16">Our Logistics Process</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-brand-navy rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">1</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy mb-3">Order Processing</h4>
+                    <p class="text-brand-gray">Efficient order processing and preparation for shipment with quality
+                        checks.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-brand-navy rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">2</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy mb-3">Route Planning</h4>
+                    <p class="text-brand-gray">Optimized route planning for efficient delivery and cost optimization.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-brand-navy rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">3</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy mb-3">Transportation</h4>
+                    <p class="text-brand-gray">Safe transportation with real-time tracking and monitoring throughout the
+                        journey.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-brand-navy rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">4</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy mb-3">Delivery & Confirmation</h4>
+                    <p class="text-brand-gray">Professional delivery with confirmation and documentation for your
+                        records.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-brand-navy mb-4">Need Reliable Logistics Solutions?</h2>
+            <p class="text-xl text-brand-gray mb-8 max-w-3xl mx-auto">
+                Contact our logistics specialists to discuss your delivery requirements and get a customized solution.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="../contact.html"
+                    class="bg-brand-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
+                    Get Quote
+                </a>
+                <a href="tel:+97141234567"
+                    class="bg-brand-navy hover:bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
+                    Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-navy text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <img src="../assets/images/logo.jpeg" alt="Manar Al Hikamah Trading LLC" class="h-12 w-auto mb-4">
+                    <p class="text-gray-300 mb-4">Building excellence through quality and innovation.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-300 hover:text-brand-orange">Home</a></li>
+                        <li><a href="../about.html" class="text-gray-300 hover:text-brand-orange">About Us</a></li>
+                        <li><a href="../services.html" class="text-gray-300 hover:text-brand-orange">Services</a></li>
+                        <li><a href="../contact.html" class="text-gray-300 hover:text-brand-orange">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-brand-orange mr-3"></i>
+                            <span class="text-gray-300 text-sm">+971 4 123 4567</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-brand-orange mr-3"></i>
+                            <span class="text-gray-300 text-sm">info@manarhikamah.ae</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-300 text-sm">&copy; 2024 Manar Al Hikamah Trading LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

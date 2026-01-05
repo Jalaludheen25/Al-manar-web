@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Manar Al Hikamah Trading LLC</title>
+    <meta name="description" content="Get in touch with Manar Al Hikamah Trading LLC for all your construction materials and trading needs in the UAE.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-navy': '#1e3a5f',
+                        'brand-orange': '#f97316',
+                        'brand-light': '#f8fafc',
+                        'brand-gray': '#64748b'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center gap-2 group">
+                        <div class="logo-icon relative w-10 h-10 flex items-center justify-center">
+                            <div class="absolute inset-0 flex items-end justify-center gap-0.5">
+                                <div class="w-2 h-6 bg-gradient-to-t from-brand-navy to-brand-navy/80 rounded-t-sm group-hover:h-7 transition-all duration-300"></div>
+                                <div class="w-3 h-8 bg-gradient-to-t from-brand-orange to-brand-orange/80 rounded-t-sm group-hover:h-9 transition-all duration-300"></div>
+                                <div class="w-2 h-5 bg-gradient-to-t from-brand-navy to-brand-navy/80 rounded-t-sm group-hover:h-6 transition-all duration-300"></div>
+                            </div>
+                            <div class="absolute top-1 left-0 right-0 h-0.5 bg-brand-orange/60"></div>
+                        </div>
+                        <div class="hidden sm:flex flex-col leading-none">
+                            <span class="text-brand-navy font-bold text-sm tracking-tight">MANAR AL HIKAMAH</span>
+                            <span class="text-brand-orange text-[10px] font-medium tracking-wider">TRADING LLC</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html" class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                    <a href="about.html" class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                    <div class="relative dropdown">
+                        <button class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                            Materials <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg py-1 opacity-0 invisible transition-all duration-200">
+                            <a href="materials/steel-products.html" class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Steel & Basic Steel Products</a>
+                            <a href="materials/construction-materials.html" class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Building & Construction Materials</a>
+                            <a href="materials/metal-products.html" class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Building Metal Products</a>
+                            <a href="materials/tiles-flooring.html" class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Tiles & Flooring Materials</a>
+                            <a href="materials/pipes-fittings.html" class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Pipes & Fittings</a>
+                            <a href="materials/scaffolds.html" class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Scaffolds</a>
+                            <a href="materials/wooden-products.html" class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Wooden Products</a>
+                        </div>
+                    </div>
+                    <div class="relative dropdown">
+                        <button class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                            Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg py-1 opacity-0 invisible transition-all duration-200">
+                            <a href="services/trading-solutions.html" class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Trading Solutions</a>
+                            <a href="services/supply-chain.html" class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Supply Chain Management</a>
+                            <a href="services/logistics.html" class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Logistics & Distribution</a>
+                            <a href="services/consulting.html" class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Project Consulting</a>
+                        </div>
+                    </div>
+                    <a href="certifications.html" class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Certifications</a>
+                    <a href="gallery.html" class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Gallery</a>
+                    <a href="contact.html" class="text-brand-orange px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header with Background -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-brand-navy to-blue-900 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&h=600&fit=crop" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-bold text-white mb-4">Contact Us</h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">Get in touch with our team for all your trading and material needs</p>
+        </div>
+    </section>
+
+    <!-- Quick Contact Cards -->
+    <section class="py-8 -mt-8 relative z-10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl shadow-xl p-6 text-center hover:shadow-2xl transition-shadow">
+                    <div class="bg-brand-orange rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-navy mb-2">Call Us</h3>
+                    <p class="text-brand-gray">+971 4 123 4567</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-xl p-6 text-center hover:shadow-2xl transition-shadow">
+                    <div class="bg-brand-orange rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-navy mb-2">Email Us</h3>
+                    <p class="text-brand-gray">info@manarhikamah.ae</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-xl p-6 text-center hover:shadow-2xl transition-shadow">
+                    <div class="bg-brand-orange rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-navy mb-2">Working Hours</h3>
+                    <p class="text-brand-gray">Sun-Thu: 8AM - 6PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-3xl font-bold text-brand-navy mb-6">Send us a Message</h2>
+                    <p class="text-brand-gray mb-8">Ready to discuss your project requirements? Fill out the form below and our team will get back to you within 24 hours.</p>
+                    
+                    <div class="alert-container"></div>
+                    
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="firstName" class="block text-sm font-medium text-brand-navy mb-2">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required 
+                                       class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-sm font-medium text-brand-navy mb-2">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required 
+                                       class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-brand-navy mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-brand-navy mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" 
+                                   class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="company" class="block text-sm font-medium text-brand-navy mb-2">Company Name</label>
+                            <input type="text" id="company" name="company" 
+                                   class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-brand-navy mb-2">Subject *</label>
+                            <select id="subject" name="subject" required 
+                                    class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent">
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="materials">Materials Quote</option>
+                                <option value="services">Services Information</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="support">Technical Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-brand-navy mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="6" required 
+                                      class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
+                                      placeholder="Please provide details about your requirements..."></textarea>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full bg-brand-orange hover:bg-orange-600 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="text-3xl font-bold text-brand-navy mb-6">Get in Touch</h2>
+                    <p class="text-brand-gray mb-8">We're here to help with all your trading and material needs. Reach out to us through any of the following channels.</p>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="bg-brand-orange rounded-full p-3 mr-4 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-brand-navy mb-1">Office Address</h4>
+                                <p class="text-brand-gray">Dubai, United Arab Emirates</p>
+                                <p class="text-brand-gray text-sm">Business Bay Area</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-brand-orange rounded-full p-3 mr-4 flex-shrink-0">
+                                <i class="fas fa-phone text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-brand-navy mb-1">Phone Numbers</h4>
+                                <p class="text-brand-gray">+971 4 123 4567 (Main)</p>
+                                <p class="text-brand-gray">+971 50 123 4567 (Mobile)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-brand-orange rounded-full p-3 mr-4 flex-shrink-0">
+                                <i class="fas fa-envelope text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-brand-navy mb-1">Email Addresses</h4>
+                                <p class="text-brand-gray">info@manarhikamah.ae</p>
+                                <p class="text-brand-gray">sales@manarhikamah.ae</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-brand-orange rounded-full p-3 mr-4 flex-shrink-0">
+                                <i class="fas fa-clock text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-brand-navy mb-1">Business Hours</h4>
+                                <p class="text-brand-gray">Sunday - Thursday: 8:00 AM - 6:00 PM</p>
+                                <p class="text-brand-gray">Friday - Saturday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Map Placeholder -->
+                    <div class="bg-gray-200 rounded-lg h-64 flex items-center justify-center mb-8">
+                        <div class="text-center">
+                            <i class="fas fa-map text-brand-gray text-4xl mb-2"></i>
+                            <p class="text-brand-gray">Interactive Map</p>
+                            <p class="text-brand-gray text-sm">Dubai, UAE Location</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media -->
+                    <div>
+                        <h4 class="text-lg font-semibold text-brand-navy mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-brand-navy hover:bg-blue-900 text-white p-3 rounded-full transition-colors">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="#" class="bg-brand-navy hover:bg-blue-900 text-white p-3 rounded-full transition-colors">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="bg-brand-navy hover:bg-blue-900 text-white p-3 rounded-full transition-colors">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </a>
+                            <a href="#" class="bg-brand-navy hover:bg-blue-900 text-white p-3 rounded-full transition-colors">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-brand-navy text-center mb-16">Frequently Asked Questions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg p-6 shadow-lg">
+                    <h4 class="text-lg font-semibold text-brand-navy mb-3">What materials do you supply?</h4>
+                    <p class="text-brand-gray">We supply a comprehensive range of construction materials including steel products, building materials, metal products, tiles, pipes, fittings, scaffolds, and wooden products.</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 shadow-lg">
+                    <h4 class="text-lg font-semibold text-brand-navy mb-3">Do you provide delivery services?</h4>
+                    <p class="text-brand-gray">Yes, we offer reliable delivery services across the UAE. Our logistics team ensures timely and safe delivery of all materials to your project site.</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 shadow-lg">
+                    <h4 class="text-lg font-semibold text-brand-navy mb-3">Can you provide custom quotes?</h4>
+                    <p class="text-brand-gray">Absolutely! We provide customized quotes based on your specific requirements, project size, and delivery timeline. Contact us with your project details.</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 shadow-lg">
+                    <h4 class="text-lg font-semibold text-brand-navy mb-3">What are your payment terms?</h4>
+                    <p class="text-brand-gray">We offer flexible payment terms to suit different business needs. Our team will discuss the best payment options during the quotation process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-navy text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <img src="assets/images/logo.jpeg" alt="Manar Al Hikamah Trading LLC" class="h-12 w-auto mb-4">
+                    <p class="text-gray-300 mb-4">Building excellence through quality and innovation.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-brand-orange"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-brand-orange"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-brand-orange"><i class="fab fa-linkedin-in text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-brand-orange"><i class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-brand-orange">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-brand-orange">About Us</a></li>
+                        <li><a href="materials.html" class="text-gray-300 hover:text-brand-orange">Materials</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-brand-orange">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-brand-orange">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-brand-orange mr-3"></i>
+                            <span class="text-gray-300 text-sm">Dubai, UAE</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-brand-orange mr-3"></i>
+                            <span class="text-gray-300 text-sm">+971 4 123 4567</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-brand-orange mr-3"></i>
+                            <span class="text-gray-300 text-sm">info@manarhikamah.ae</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-300 text-sm">&copy; 2024 Manar Al Hikamah Trading LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

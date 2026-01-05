@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Manar Al Hikamah Trading LLC</title>
+    <meta name="description"
+        content="Explore our gallery showcasing construction projects, materials, warehouses, and trading operations in the UAE.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-navy': '#1e3a5f',
+                        'brand-orange': '#f97316',
+                        'brand-light': '#f8fafc',
+                        'brand-gray': '#64748b'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center gap-2 group">
+                        <div class="logo-icon relative w-10 h-10 flex items-center justify-center">
+                            <div class="absolute inset-0 flex items-end justify-center gap-0.5">
+                                <div
+                                    class="w-2 h-6 bg-gradient-to-t from-brand-navy to-brand-navy/80 rounded-t-sm group-hover:h-7 transition-all duration-300">
+                                </div>
+                                <div
+                                    class="w-3 h-8 bg-gradient-to-t from-brand-orange to-brand-orange/80 rounded-t-sm group-hover:h-9 transition-all duration-300">
+                                </div>
+                                <div
+                                    class="w-2 h-5 bg-gradient-to-t from-brand-navy to-brand-navy/80 rounded-t-sm group-hover:h-6 transition-all duration-300">
+                                </div>
+                            </div>
+                            <div class="absolute top-1 left-0 right-0 h-0.5 bg-brand-orange/60"></div>
+                        </div>
+                        <div class="hidden sm:flex flex-col leading-none">
+                            <span class="text-brand-navy font-bold text-sm tracking-tight">MANAR AL HIKAMAH</span>
+                            <span class="text-brand-orange text-[10px] font-medium tracking-wider">TRADING LLC</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                    <a href="about.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                    <div class="relative dropdown">
+                        <button
+                            class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                            Materials <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div
+                            class="dropdown-menu absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg py-1 opacity-0 invisible transition-all duration-200">
+                            <a href="materials/steel-products.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Steel
+                                & Basic Steel Products</a>
+                            <a href="materials/construction-materials.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Building
+                                & Construction Materials</a>
+                            <a href="materials/metal-products.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Building
+                                Metal Products</a>
+                            <a href="materials/tiles-flooring.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Tiles
+                                & Flooring Materials</a>
+                            <a href="materials/pipes-fittings.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Pipes
+                                & Fittings</a>
+                            <a href="materials/scaffolds.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Scaffolds</a>
+                            <a href="materials/wooden-products.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Wooden
+                                Products</a>
+                        </div>
+                    </div>
+                    <div class="relative dropdown">
+                        <button
+                            class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                            Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div
+                            class="dropdown-menu absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg py-1 opacity-0 invisible transition-all duration-200">
+                            <a href="services/trading-solutions.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Trading
+                                Solutions</a>
+                            <a href="services/supply-chain.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Supply
+                                Chain Management</a>
+                            <a href="services/logistics.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Logistics
+                                & Distribution</a>
+                            <a href="services/consulting.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Project
+                                Consulting</a>
+                        </div>
+                    </div>
+                    <a href="certifications.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Certifications</a>
+                    <a href="gallery.html"
+                        class="text-brand-orange px-3 py-2 rounded-md text-sm font-medium">Gallery</a>
+                    <a href="contact.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header with Background -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-brand-navy to-blue-900 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-30">
+            <img src="assets/images/Building-&-Construction-Materials-3.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-bold text-white mb-4">Gallery</h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">Showcasing our projects, materials, and operations across
+                the UAE</p>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="py-8 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button
+                    class="filter-btn active bg-brand-orange text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                    data-filter="all">
+                    All
+                </button>
+                <button
+                    class="filter-btn bg-brand-light text-brand-navy hover:bg-brand-orange hover:text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                    data-filter="construction">
+                    Construction
+                </button>
+                <button
+                    class="filter-btn bg-brand-light text-brand-navy hover:bg-brand-orange hover:text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                    data-filter="materials">
+                    Materials
+                </button>
+                <button
+                    class="filter-btn bg-brand-light text-brand-navy hover:bg-brand-orange hover:text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                    data-filter="warehouse">
+                    Warehouses
+                </button>
+                <button
+                    class="filter-btn bg-brand-light text-brand-navy hover:bg-brand-orange hover:text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                    data-filter="projects">
+                    Projects
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+                <!-- Construction Images -->
+                <div class="gallery-item construction group" data-category="construction">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-72 shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="assets/images/High-Rise Construction.jpg" alt="High-Rise Construction"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">High-Rise Construction</h4>
+                                <p class="text-gray-300 text-sm">Dubai Marina Project</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item construction group" data-category="construction">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-72 shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="assets/images/Residential Complex.jpg" alt="Tower Construction"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">Residential Complex</h4>
+                                <p class="text-gray-300 text-sm">Al Barsha Development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item construction group" data-category="construction">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-72 shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="assets/images/Commercial Center.jpg" alt="Commercial Center"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">Commercial Center</h4>
+                                <p class="text-gray-300 text-sm">Business Bay Mall</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Materials Images -->
+                <div class="gallery-item materials group" data-category="materials">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-72 shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="assets/images/Steel-&-Basic-Steel-Products-4.jpg" alt="Steel Products"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">Steel Products</h4>
+                                <p class="text-gray-300 text-sm">Premium Grade Steel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item materials group" data-category="materials">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-72 shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="assets/images/Pipes-&-Fittings-4.jpg" alt="Pipes & Fittings"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">Pipes & Fittings</h4>
+                                <p class="text-gray-300 text-sm">Industrial Grade</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item materials group" data-category="materials">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-72 shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="assets/images/Scaffolding Systems.jpg" alt="Scaffolding Systems"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">Scaffolding Systems</h4>
+                                <p class="text-gray-300 text-sm">Safety Certified</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Warehouse Images -->
+                <div class="gallery-item warehouse group" data-category="warehouse">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-72 shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="assets/images/wear house.jpg" alt="Main Warehouse"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">Main Warehouse</h4>
+                                <p class="text-gray-300 text-sm">Dubai Industrial City</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item warehouse group" data-category="warehouse">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-72 shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="assets/images/Storage Facility.jpg" alt="Storage Facility"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">Storage Facility</h4>
+                                <p class="text-gray-300 text-sm">Climate Controlled</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item warehouse group" data-category="warehouse">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-72 shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="assets/images/Logistics & Distribution-2.jpg" alt="Loading Bay"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">Loading Bay</h4>
+                                <p class="text-gray-300 text-sm">24/7 Operations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Images -->
+                <div class="gallery-item projects group md:col-span-2" data-category="projects">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-72 shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="assets/images/Mega Construction Project.jpg" alt="Mega Construction Project"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-xl font-bold">Mega Construction Project</h4>
+                                <p class="text-gray-300">Downtown Dubai - 100,000 sqm Development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item projects group" data-category="projects">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-72 shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="assets/images/Infrastructure Project.jpg" alt="Infrastructure Project"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">Infrastructure Project</h4>
+                                <p class="text-gray-300 text-sm">Road & Bridge Works</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Materials Images -->
+                <div class="gallery-item materials" data-category="materials">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-64 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                        <img src="assets/images/Building Metal Products 01.jpg" alt="Industrial Park"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">Steel Products</h4>
+                                <p class="text-gray-300 text-sm">Premium Quality Steel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item materials" data-category="materials">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-64 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                        <img src="assets/images/Construction Materials.jpg" alt="Construction Materials"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">Construction Materials</h4>
+                                <p class="text-gray-300 text-sm">Cement & Aggregates</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item materials" data-category="materials">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-64 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                        <img src="assets/images/Tiles & Flooring Materials 03.jpg" alt="Tiles & Flooring"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">Tiles & Flooring</h4>
+                                <p class="text-gray-300 text-sm">Premium Tile Collection</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Warehouse Images -->
+                <div class="gallery-item warehouse" data-category="warehouse">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-64 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                        <img src="assets/images/Logistics & Distribution-3.jpg" alt="Main Warehouse"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">Main Warehouse</h4>
+                                <p class="text-gray-300 text-sm">Dubai Industrial City</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item warehouse" data-category="warehouse">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-64 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                        <img src="assets/images/Distribution Center.jpg" alt="Distribution Center"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">Distribution Center</h4>
+                                <p class="text-gray-300 text-sm">Logistics Hub</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item warehouse" data-category="warehouse">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-64 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                        <img src="assets/images/Office Space.jpg" alt="Urban Development"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">Storage Facility</h4>
+                                <p class="text-gray-300 text-sm">Climate Controlled</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Images -->
+                <div class="gallery-item projects" data-category="projects">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-64 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                        <img src="assets/images/Dubai Creek Tower.jpg" alt="Dubai Creek Tower"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">Dubai Creek Tower</h4>
+                                <p class="text-gray-300 text-sm">Steel Supply Project</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item projects" data-category="projects">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-64 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                        <img src="assets/images/Building Metal Products 03.jpg" alt="Material Stock"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">Infrastructure Project</h4>
+                                <p class="text-gray-300 text-sm">Highway Construction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item projects" data-category="projects">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-64 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                        <img src="assets/images/Healthcare Facility.jpg" alt="Healthcare Facility"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">Healthcare Facility</h4>
+                                <p class="text-gray-300 text-sm">Hospital Construction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Mixed Items -->
+                <div class="gallery-item materials construction" data-category="materials construction">
+                    <div
+                        class="relative rounded-xl overflow-hidden h-64 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                        <img src="assets/images/Safety Equipment.jpg" alt="Safety Equipment"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white text-lg font-bold">Safety Equipment</h4>
+                                <p class="text-gray-300 text-sm">Construction Safety</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-brand-navy mb-4">Industry Videos</h2>
+                <p class="text-xl text-brand-gray max-w-3xl mx-auto">
+                    Explore construction materials, steel manufacturing, and logistics operations.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Steel Manufacturing Video -->
+                <div
+                    class="bg-brand-light rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <div class="relative w-full" style="padding-bottom: 56.25%;">
+                        <iframe class="absolute top-0 left-0 w-full h-full"
+                            src="https://www.youtube.com/embed/9l7JqonyoKA?rel=0" title="Steel Manufacturing Process"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-brand-navy mb-2">Steel Manufacturing</h3>
+                        <p class="text-brand-gray">See how high-quality steel products are manufactured for construction
+                            projects.</p>
+                    </div>
+                </div>
+
+                <!-- Construction Materials Video -->
+                <div
+                    class="bg-brand-light rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <div class="relative w-full" style="padding-bottom: 56.25%;">
+                        <iframe class="absolute top-0 left-0 w-full h-full"
+                            src="https://www.youtube.com/embed/FPSYv0jLy5A?rel=0"
+                            title="Construction Materials Overview" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-brand-navy mb-2">Construction Materials</h3>
+                        <p class="text-brand-gray">Overview of essential building materials used in modern construction.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Warehouse & Logistics Video -->
+                <div
+                    class="bg-brand-light rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <div class="relative w-full" style="padding-bottom: 56.25%;">
+                        <iframe class="absolute top-0 left-0 w-full h-full"
+                            src="https://www.youtube.com/embed/BGbpTLYYXwY?rel=0" title="Warehouse Operations"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-brand-navy mb-2">Warehouse Operations</h3>
+                        <p class="text-brand-gray">Modern warehouse management and logistics for efficient material
+                            distribution.</p>
+                    </div>
+                </div>
+
+                <!-- Scaffolding Systems Video -->
+                <div
+                    class="bg-brand-light rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <div class="relative w-full" style="padding-bottom: 56.25%;">
+                        <iframe class="absolute top-0 left-0 w-full h-full"
+                            src="https://www.youtube.com/embed/Gy5WVHKYA6s?rel=0" title="Scaffolding Systems"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-brand-navy mb-2">Scaffolding Systems</h3>
+                        <p class="text-brand-gray">Professional scaffolding installation and safety standards for
+                            construction sites.</p>
+                    </div>
+                </div>
+
+                <!-- Pipe Fitting Video -->
+                <div
+                    class="bg-brand-light rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <div class="relative w-full" style="padding-bottom: 56.25%;">
+                        <iframe class="absolute top-0 left-0 w-full h-full"
+                            src="https://www.youtube.com/embed/SuPLxQD4akQ?rel=0" title="Pipe Fitting & Plumbing"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-brand-navy mb-2">Pipes & Fittings</h3>
+                        <p class="text-brand-gray">Industrial piping solutions and professional fitting techniques.</p>
+                    </div>
+                </div>
+
+                <!-- Dubai Construction Video -->
+                <div
+                    class="bg-brand-light rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <div class="relative w-full" style="padding-bottom: 56.25%;">
+                        <iframe class="absolute top-0 left-0 w-full h-full"
+                            src="https://www.youtube.com/embed/f5liqUk0ZTw?rel=0" title="Dubai Construction Projects"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-brand-navy mb-2">Dubai Construction</h3>
+                        <p class="text-brand-gray">Iconic construction projects and developments in Dubai, UAE.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-brand-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4">Ready to Start Your Project?</h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                Contact us to discuss how we can support your construction and trading needs.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html"
+                    class="bg-brand-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
+                    Get Quote
+                </a>
+                <a href="materials.html"
+                    class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-brand-navy px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105">
+                    View Materials
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-navy text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <img src="assets/images/logo.jpeg" alt="Manar Al Hikamah Trading LLC" class="h-12 w-auto mb-4">
+                    <p class="text-gray-300 mb-4">Building excellence through quality and innovation.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-brand-orange"><i
+                                class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-brand-orange"><i
+                                class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-brand-orange"><i
+                                class="fab fa-linkedin-in text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-brand-orange"><i
+                                class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-brand-orange">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-brand-orange">About Us</a></li>
+                        <li><a href="materials.html" class="text-gray-300 hover:text-brand-orange">Materials</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-brand-orange">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-brand-orange">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-brand-orange mr-3"></i>
+                            <span class="text-gray-300 text-sm">Dubai, UAE</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-brand-orange mr-3"></i>
+                            <span class="text-gray-300 text-sm">+971 4 123 4567</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-brand-orange mr-3"></i>
+                            <span class="text-gray-300 text-sm">info@manarhikamah.ae</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-300 text-sm">&copy; 2024 Manar Al Hikamah Trading LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Gallery Filter Functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const filter = this.getAttribute('data-filter');
+
+                    // Update active button
+                    filterBtns.forEach(b => {
+                        b.classList.remove('active', 'bg-brand-orange', 'text-white');
+                        b.classList.add('bg-brand-light', 'text-brand-navy');
+                    });
+                    this.classList.add('active', 'bg-brand-orange', 'text-white');
+                    this.classList.remove('bg-brand-light', 'text-brand-navy');
+
+                    // Filter items
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.classList.contains(filter)) {
+                            item.style.display = 'block';
+                            item.style.animation = 'fadeIn 0.5s ease-in';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

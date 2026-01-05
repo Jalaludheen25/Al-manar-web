@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steel & Basic Steel Products - Manar Al Hikamah Trading LLC</title>
+    <meta name="description"
+        content="High-quality steel and basic steel products for construction and industrial applications in the UAE.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-navy': '#1e3a5f',
+                        'brand-orange': '#f97316',
+                        'brand-light': '#f8fafc',
+                        'brand-gray': '#64748b'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="../index.html" class="flex items-center gap-2 group">
+                        <div class="logo-icon relative w-10 h-10 flex items-center justify-center">
+                            <div class="absolute inset-0 flex items-end justify-center gap-0.5">
+                                <div
+                                    class="w-2 h-6 bg-gradient-to-t from-brand-navy to-brand-navy/80 rounded-t-sm group-hover:h-7 transition-all duration-300">
+                                </div>
+                                <div
+                                    class="w-3 h-8 bg-gradient-to-t from-brand-orange to-brand-orange/80 rounded-t-sm group-hover:h-9 transition-all duration-300">
+                                </div>
+                                <div
+                                    class="w-2 h-5 bg-gradient-to-t from-brand-navy to-brand-navy/80 rounded-t-sm group-hover:h-6 transition-all duration-300">
+                                </div>
+                            </div>
+                            <div class="absolute top-1 left-0 right-0 h-0.5 bg-brand-orange/60"></div>
+                        </div>
+                        <div class="hidden sm:flex flex-col leading-none">
+                            <span class="text-brand-navy font-bold text-sm tracking-tight">MANAR AL HIKAMAH</span>
+                            <span class="text-brand-orange text-[10px] font-medium tracking-wider">TRADING LLC</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="hidden md:flex space-x-4">
+                    <a href="../index.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                    <a href="../about.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                    <div class="relative dropdown">
+                        <button class="text-brand-orange px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                            Materials <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div
+                            class="dropdown-menu absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg py-1 opacity-0 invisible transition-all duration-200">
+                            <a href="steel-products.html"
+                                class="block px-4 py-2 text-sm text-brand-orange bg-brand-light">Steel & Basic Steel
+                                Products</a>
+                            <a href="construction-materials.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Building
+                                & Construction Materials</a>
+                            <a href="metal-products.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Building
+                                Metal Products</a>
+                            <a href="tiles-flooring.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Tiles
+                                & Flooring Materials</a>
+                            <a href="pipes-fittings.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Pipes
+                                & Fittings</a>
+                            <a href="scaffolds.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Scaffolds</a>
+                            <a href="wooden-products.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Wooden
+                                Products</a>
+                        </div>
+                    </div>
+                    <div class="relative dropdown">
+                        <button
+                            class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                            Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div
+                            class="dropdown-menu absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg py-1 opacity-0 invisible transition-all duration-200">
+                            <a href="../services/trading-solutions.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Trading
+                                Solutions</a>
+                            <a href="../services/supply-chain.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Supply
+                                Chain Management</a>
+                            <a href="../services/logistics.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Logistics
+                                & Distribution</a>
+                            <a href="../services/consulting.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Project
+                                Consulting</a>
+                        </div>
+                    </div>
+
+                    <a href="../certifications.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Certifications</a>
+                    <a href="../gallery.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Gallery</a>
+                    <a href="../contact.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="pt-20 pb-4 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="text-sm">
+                <ol class="list-none p-0 inline-flex">
+                    <li class="flex items-center">
+                        <a href="../index.html" class="text-brand-gray hover:text-brand-orange">Home</a>
+                        <i class="fas fa-chevron-right mx-2 text-brand-gray text-xs"></i>
+                    </li>
+                    <li class="flex items-center">
+                        <a href="../materials.html" class="text-brand-gray hover:text-brand-orange">Materials</a>
+                        <i class="fas fa-chevron-right mx-2 text-brand-gray text-xs"></i>
+                    </li>
+                    <li class="text-brand-orange">Steel & Basic Steel Products</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-brand-navy to-blue-900 relative overflow-hidden">
+        <!-- Hero Background Image -->
+        <div class="absolute inset-0 opacity-20">
+            <img src="../assets/images/Steel-&-Basic-Steel-Products-4.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-bold text-white mb-4">Steel & Basic Steel Products</h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">Premium quality steel materials for construction and
+                industrial applications</p>
+        </div>
+    </section>
+
+    <!-- Product Overview -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-brand-navy mb-6">High-Quality Steel Solutions</h2>
+                    <p class="text-brand-gray text-lg leading-relaxed mb-6">
+                        Our steel and basic steel products division offers a comprehensive range of premium quality
+                        steel materials sourced from leading manufacturers worldwide. We specialize in providing
+                        structural steel, reinforcement bars, steel sheets, and various steel profiles that meet
+                        international standards and specifications.
+                    </p>
+                    <p class="text-brand-gray text-lg leading-relaxed mb-6">
+                        With over 15 years of experience in steel trading, we understand the critical importance of
+                        quality, reliability, and timely delivery in construction projects. Our steel products are
+                        certified and tested to ensure they meet the highest industry standards.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="bg-brand-orange text-white px-4 py-2 rounded-full text-sm font-medium">ISO
+                            Certified</span>
+                        <span class="bg-brand-orange text-white px-4 py-2 rounded-full text-sm font-medium">UAE
+                            Standards</span>
+                        <span class="bg-brand-orange text-white px-4 py-2 rounded-full text-sm font-medium">Quality
+                            Tested</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="../assets/images/Steel-&-Basic-Steel-Products-4.jpg" alt="Steel Beams"
+                        class="rounded-lg shadow-lg w-full h-48 object-cover">
+                    <img src="../assets/images/Building-Metal-Products-3.jpg" alt="Steel Rods"
+                        class="rounded-lg shadow-lg w-full h-48 object-cover">
+                    <img src="../assets/images/Steel-&-Basic-Steel-Products-4.jpg" alt="Steel Sheets"
+                        class="rounded-lg shadow-lg w-full h-48 object-cover opacity-80">
+                    <img src="../assets/images/Building-&-Construction-Materials-3.jpg" alt="Steel Warehouse"
+                        class="rounded-lg shadow-lg w-full h-48 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-brand-navy text-center mb-16">Our Steel Product Range</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-brand-orange rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-building text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-4">Structural Steel</h3>
+                    <ul class="text-brand-gray space-y-2 mb-4">
+                        <li>• I-Beams and H-Beams</li>
+                        <li>• Steel Columns</li>
+                        <li>• Angle Steel</li>
+                        <li>• Channel Steel</li>
+                        <li>• Steel Plates</li>
+                    </ul>
+                    <p class="text-brand-gray text-sm">High-strength structural steel for building frameworks and
+                        infrastructure projects.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-brand-orange rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-hammer text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-4">Reinforcement Steel</h3>
+                    <ul class="text-brand-gray space-y-2 mb-4">
+                        <li>• Rebar (TMT Bars)</li>
+                        <li>• Wire Mesh</li>
+                        <li>• Steel Fibers</li>
+                        <li>• Binding Wire</li>
+                        <li>• Welded Mesh</li>
+                    </ul>
+                    <p class="text-brand-gray text-sm">Reinforcement materials for concrete structures and foundation
+                        work.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-brand-orange rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-layer-group text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-4">Steel Sheets & Coils</h3>
+                    <ul class="text-brand-gray space-y-2 mb-4">
+                        <li>• Hot Rolled Sheets</li>
+                        <li>• Cold Rolled Sheets</li>
+                        <li>• Galvanized Sheets</li>
+                        <li>• Stainless Steel Sheets</li>
+                        <li>• Steel Coils</li>
+                    </ul>
+                    <p class="text-brand-gray text-sm">Various steel sheet products for roofing, cladding, and
+                        fabrication.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-brand-orange rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-circle text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-4">Steel Pipes & Tubes</h3>
+                    <ul class="text-brand-gray space-y-2 mb-4">
+                        <li>• Seamless Pipes</li>
+                        <li>• Welded Pipes</li>
+                        <li>• Square Tubes</li>
+                        <li>• Rectangular Tubes</li>
+                        <li>• Round Tubes</li>
+                    </ul>
+                    <p class="text-brand-gray text-sm">Steel pipes and tubes for structural and mechanical applications.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-brand-orange rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-tools text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-4">Steel Accessories</h3>
+                    <ul class="text-brand-gray space-y-2 mb-4">
+                        <li>• Bolts & Nuts</li>
+                        <li>• Washers</li>
+                        <li>• Steel Fasteners</li>
+                        <li>• Welding Electrodes</li>
+                        <li>• Steel Hardware</li>
+                    </ul>
+                    <p class="text-brand-gray text-sm">Essential accessories and fasteners for steel construction
+                        projects.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-brand-orange rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-industry text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-4">Specialty Steel</h3>
+                    <ul class="text-brand-gray space-y-2 mb-4">
+                        <li>• Alloy Steel</li>
+                        <li>• Tool Steel</li>
+                        <li>• Spring Steel</li>
+                        <li>• High Carbon Steel</li>
+                        <li>• Weather Resistant Steel</li>
+                    </ul>
+                    <p class="text-brand-gray text-sm">Specialized steel grades for specific industrial applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-brand-navy text-center mb-16">Applications & Use Cases</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-brand-light rounded-lg p-8 mb-4">
+                        <i class="fas fa-building text-brand-orange text-4xl mb-4"></i>
+                        <h4 class="text-lg font-bold text-brand-navy">Commercial Buildings</h4>
+                    </div>
+                    <p class="text-brand-gray text-sm">Office towers, shopping malls, hotels, and commercial complexes
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-brand-light rounded-lg p-8 mb-4">
+                        <i class="fas fa-home text-brand-orange text-4xl mb-4"></i>
+                        <h4 class="text-lg font-bold text-brand-navy">Residential Projects</h4>
+                    </div>
+                    <p class="text-brand-gray text-sm">Villas, apartments, housing developments, and residential towers
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-brand-light rounded-lg p-8 mb-4">
+                        <i class="fas fa-road text-brand-orange text-4xl mb-4"></i>
+                        <h4 class="text-lg font-bold text-brand-navy">Infrastructure</h4>
+                    </div>
+                    <p class="text-brand-gray text-sm">Bridges, highways, airports, ports, and public infrastructure</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-brand-light rounded-lg p-8 mb-4">
+                        <i class="fas fa-industry text-brand-orange text-4xl mb-4"></i>
+                        <h4 class="text-lg font-bold text-brand-navy">Industrial Facilities</h4>
+                    </div>
+                    <p class="text-brand-gray text-sm">Factories, warehouses, manufacturing plants, and industrial
+                        complexes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality & Standards -->
+    <section class="py-20 bg-brand-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Quality Standards & Certifications</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Our steel products meet the highest international
+                    quality standards</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-brand-orange rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-certificate text-white text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">International Standards</h4>
+                    <p class="text-gray-300">ASTM, BS, DIN, JIS, and other international steel standards compliance</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-brand-orange rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-microscope text-white text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Quality Testing</h4>
+                    <p class="text-gray-300">Comprehensive testing including tensile strength, chemical composition, and
+                        dimensional accuracy</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-brand-orange rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-award text-white text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Mill Certificates</h4>
+                    <p class="text-gray-300">All products come with mill test certificates and quality documentation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-brand-navy mb-4">Ready to Source Premium Steel Products?</h2>
+            <p class="text-xl text-brand-gray mb-8 max-w-3xl mx-auto">
+                Contact our steel specialists today for competitive quotes and expert guidance on your steel
+                requirements.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="../contact.html"
+                    class="bg-brand-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
+                    Get Quote
+                </a>
+                <a href="tel:+97141234567"
+                    class="bg-brand-navy hover:bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
+                    Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-navy text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <img src="../assets/images/logo.jpeg" alt="Manar Al Hikamah Trading LLC" class="h-12 w-auto mb-4">
+                    <p class="text-gray-300 mb-4">Building excellence through quality and innovation.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-300 hover:text-brand-orange">Home</a></li>
+                        <li><a href="../about.html" class="text-gray-300 hover:text-brand-orange">About Us</a></li>
+                        <li><a href="../materials.html" class="text-gray-300 hover:text-brand-orange">Materials</a></li>
+                        <li><a href="../contact.html" class="text-gray-300 hover:text-brand-orange">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-brand-orange mr-3"></i>
+                            <span class="text-gray-300 text-sm">+971 4 123 4567</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-brand-orange mr-3"></i>
+                            <span class="text-gray-300 text-sm">info@manarhikamah.ae</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-300 text-sm">&copy; 2024 Manar Al Hikamah Trading LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

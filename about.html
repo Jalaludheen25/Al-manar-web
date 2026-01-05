@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Manar Al Hikamah Trading LLC</title>
+    <meta name="description"
+        content="Learn about Manar Al Hikamah Trading LLC - A leading UAE trading company with expertise in construction materials and industrial solutions.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-navy': '#1e3a5f',
+                        'brand-orange': '#f97316',
+                        'brand-light': '#f8fafc',
+                        'brand-gray': '#64748b'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation (Same as index.html) -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center gap-2 group">
+                        <div class="logo-icon relative w-10 h-10 flex items-center justify-center">
+                            <div class="absolute inset-0 flex items-end justify-center gap-0.5">
+                                <div
+                                    class="w-2 h-6 bg-gradient-to-t from-brand-navy to-brand-navy/80 rounded-t-sm group-hover:h-7 transition-all duration-300">
+                                </div>
+                                <div
+                                    class="w-3 h-8 bg-gradient-to-t from-brand-orange to-brand-orange/80 rounded-t-sm group-hover:h-9 transition-all duration-300">
+                                </div>
+                                <div
+                                    class="w-2 h-5 bg-gradient-to-t from-brand-navy to-brand-navy/80 rounded-t-sm group-hover:h-6 transition-all duration-300">
+                                </div>
+                            </div>
+                            <div class="absolute top-1 left-0 right-0 h-0.5 bg-brand-orange/60"></div>
+                        </div>
+                        <div class="hidden sm:flex flex-col leading-none">
+                            <span class="text-brand-navy font-bold text-sm tracking-tight">MANAR AL HIKAMAH</span>
+                            <span class="text-brand-orange text-[10px] font-medium tracking-wider">TRADING LLC</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                    <a href="about.html" class="text-brand-orange px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <div class="relative dropdown">
+                        <button
+                            class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                            Materials <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div
+                            class="dropdown-menu absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg py-1 opacity-0 invisible">
+                            <a href="materials/steel-products.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light">Steel & Basic Steel
+                                Products</a>
+                            <a href="materials/construction-materials.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light">Building &
+                                Construction Materials</a>
+                            <a href="materials/metal-products.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light">Building Metal
+                                Products</a>
+                            <a href="materials/tiles-flooring.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light">Tiles & Flooring
+                                Materials</a>
+                            <a href="materials/pipes-fittings.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light">Pipes &
+                                Fittings</a>
+                            <a href="materials/scaffolds.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light">Scaffolds</a>
+                            <a href="materials/wooden-products.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light">Wooden Products</a>
+                        </div>
+                    </div>
+                    <div class="relative dropdown">
+                        <button
+                            class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                            Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div
+                            class="dropdown-menu absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg py-1 opacity-0 invisible transition-all duration-200">
+                            <a href="services/trading-solutions.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Trading
+                                Solutions</a>
+                            <a href="services/supply-chain.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Supply
+                                Chain Management</a>
+                            <a href="services/logistics.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Logistics
+                                & Distribution</a>
+                            <a href="services/consulting.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Project
+                                Consulting</a>
+                        </div>
+                    </div>
+                    <a href="certifications.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Certifications</a>
+                    <a href="gallery.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Gallery</a>
+                    <a href="contact.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-brand-navy to-blue-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-bold text-white mb-4">About Manar Al Hikamah Trading LLC</h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">Building UAE's future through excellence in trading and
+                innovation</p>
+        </div>
+    </section>
+
+    <!-- Company Overview -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-brand-navy mb-6">Who We Are</h2>
+                    <p class="text-brand-gray text-lg leading-relaxed mb-6">
+                        Manar Al Hikamah Trading LLC is a premier trading company based in the United Arab Emirates,
+                        specializing in the supply and distribution of high-quality construction materials, steel
+                        products, and industrial solutions. Since our establishment, we have been committed to
+                        supporting the UAE's rapid infrastructure development and economic growth.
+                    </p>
+                    <p class="text-brand-gray text-lg leading-relaxed mb-6">
+                        Our extensive network of international suppliers and local partners enables us to provide
+                        comprehensive trading solutions that meet the diverse needs of contractors, developers, and
+                        industrial clients across the region. We pride ourselves on our ability to deliver quality
+                        products on time, every time.
+                    </p>
+                    <p class="text-brand-gray text-lg leading-relaxed">
+                        With a team of experienced professionals and a customer-centric approach, we have established
+                        ourselves as a trusted name in the UAE trading industry, contributing to some of the nation's
+                        most prestigious construction and infrastructure projects.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="assets/images/Building-&-Construction-Materials-3.jpg" alt="Company Building"
+                        class="rounded-lg shadow-lg w-full h-48 object-cover">
+                    <img src="assets/images/Building-Metal-Products-3.jpg" alt="Metal Products"
+                        class="rounded-lg shadow-lg w-full h-48 object-cover mt-8">
+                    <img src="assets/images/Scaffolds-4.jpg" alt="Warehouse"
+                        class="rounded-lg shadow-lg w-full h-48 object-cover">
+                    <img src="assets/images/Steel-&-Basic-Steel-Products-4.jpg" alt="Materials"
+                        class="rounded-lg shadow-lg w-full h-48 object-cover mt-8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg p-10 shadow-xl">
+                    <div class="bg-brand-orange rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-eye text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-brand-navy mb-4">Our Vision</h3>
+                    <p class="text-brand-gray text-lg leading-relaxed">
+                        To be the UAE's most trusted and innovative trading partner, driving sustainable growth in
+                        construction and industrial sectors while contributing to the nation's vision of excellence and
+                        prosperity. We aspire to set new standards in quality, reliability, and customer satisfaction.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg p-10 shadow-xl">
+                    <div class="bg-brand-orange rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-bullseye text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-brand-navy mb-4">Our Mission</h3>
+                    <p class="text-brand-gray text-lg leading-relaxed">
+                        To deliver exceptional trading solutions through quality materials, reliable supply chains, and
+                        innovative partnerships that exceed our clients' expectations and support UAE's infrastructure
+                        development. We are committed to building lasting relationships based on trust and excellence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-brand-navy text-center mb-16">Our Core Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6">
+                    <div class="bg-brand-orange rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt text-white text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy mb-3">Quality Assurance</h4>
+                    <p class="text-brand-gray">We maintain the highest standards in all our products and services,
+                        ensuring reliability and excellence in every transaction.</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="bg-brand-orange rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-white text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy mb-3">Customer Focus</h4>
+                    <p class="text-brand-gray">Our clients' success is our priority. We build lasting relationships
+                        through trust, transparency, and exceptional service delivery.</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="bg-brand-orange rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-lightbulb text-white text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy mb-3">Innovation</h4>
+                    <p class="text-brand-gray">We embrace new technologies and methodologies to provide cutting-edge
+                        solutions that drive industry advancement.</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="bg-brand-orange rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-white text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy mb-3">Integrity</h4>
+                    <p class="text-brand-gray">We conduct business with honesty and transparency, building trust through
+                        ethical practices and reliable partnerships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="py-20 bg-brand-navy">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-5xl font-bold text-brand-orange mb-2 counter">15+</div>
+                    <div class="text-white text-lg">Years of Excellence</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold text-brand-orange mb-2 counter">500+</div>
+                    <div class="text-white text-lg">Projects Completed</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold text-brand-orange mb-2 counter">100+</div>
+                    <div class="text-white text-lg">Trusted Partners</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold text-brand-orange mb-2">24/7</div>
+                    <div class="text-white text-lg">Customer Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-brand-navy text-center mb-16">Why Choose Manar Al Hikamah?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <i class="fas fa-award text-brand-orange text-4xl mb-4"></i>
+                    <h4 class="text-xl font-bold text-brand-navy mb-3">Proven Track Record</h4>
+                    <p class="text-brand-gray">Over 15 years of successful operations in the UAE market with hundreds of
+                        satisfied clients and completed projects.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <i class="fas fa-globe text-brand-orange text-4xl mb-4"></i>
+                    <h4 class="text-xl font-bold text-brand-navy mb-3">Global Network</h4>
+                    <p class="text-brand-gray">Extensive network of international suppliers ensuring access to premium
+                        materials at competitive prices.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <i class="fas fa-clock text-brand-orange text-4xl mb-4"></i>
+                    <h4 class="text-xl font-bold text-brand-navy mb-3">Timely Delivery</h4>
+                    <p class="text-brand-gray">Efficient logistics and supply chain management ensuring your materials
+                        arrive on time, every time.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <i class="fas fa-dollar-sign text-brand-orange text-4xl mb-4"></i>
+                    <h4 class="text-xl font-bold text-brand-navy mb-3">Competitive Pricing</h4>
+                    <p class="text-brand-gray">Best value for money without compromising on quality, helping you stay
+                        within budget.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <i class="fas fa-headset text-brand-orange text-4xl mb-4"></i>
+                    <h4 class="text-xl font-bold text-brand-navy mb-3">Expert Support</h4>
+                    <p class="text-brand-gray">Dedicated team of professionals providing technical guidance and customer
+                        support throughout your project.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <i class="fas fa-certificate text-brand-orange text-4xl mb-4"></i>
+                    <h4 class="text-xl font-bold text-brand-navy mb-3">Quality Certified</h4>
+                    <p class="text-brand-gray">All products meet international quality standards and certifications for
+                        your peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-brand-navy mb-4">Our Leadership Team</h2>
+                <p class="text-xl text-brand-gray max-w-3xl mx-auto">Meet the experienced professionals driving our
+                    success</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center group">
+                    <div
+                        class="relative overflow-hidden rounded-xl mb-4 bg-gradient-to-br from-brand-navy to-brand-navy/60 h-64 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-white/20 text-8xl absolute"></i>
+                        <span class="text-white text-4xl font-bold relative z-10">AM</span>
+                        <div
+                            class="absolute inset-0 bg-brand-navy/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                            <a href="#" class="text-white hover:text-brand-orange"><i
+                                    class="fab fa-linkedin text-2xl"></i></a>
+                            <a href="#" class="text-white hover:text-brand-orange"><i
+                                    class="fas fa-envelope text-2xl"></i></a>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy">Ahmed Al Mansouri</h4>
+                    <p class="text-brand-orange font-medium">Chief Executive Officer</p>
+                </div>
+
+                <div class="text-center group">
+                    <div
+                        class="relative overflow-hidden rounded-xl mb-4 bg-gradient-to-br from-brand-orange to-orange-400 h-64 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-white/20 text-8xl absolute"></i>
+                        <span class="text-white text-4xl font-bold relative z-10">FH</span>
+                        <div
+                            class="absolute inset-0 bg-brand-navy/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                            <a href="#" class="text-white hover:text-brand-orange"><i
+                                    class="fab fa-linkedin text-2xl"></i></a>
+                            <a href="#" class="text-white hover:text-brand-orange"><i
+                                    class="fas fa-envelope text-2xl"></i></a>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy">Fatima Hassan</h4>
+                    <p class="text-brand-orange font-medium">Chief Operations Officer</p>
+                </div>
+
+                <div class="text-center group">
+                    <div
+                        class="relative overflow-hidden rounded-xl mb-4 bg-gradient-to-br from-brand-navy/80 to-brand-navy h-64 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-white/20 text-8xl absolute"></i>
+                        <span class="text-white text-4xl font-bold relative z-10">MR</span>
+                        <div
+                            class="absolute inset-0 bg-brand-navy/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                            <a href="#" class="text-white hover:text-brand-orange"><i
+                                    class="fab fa-linkedin text-2xl"></i></a>
+                            <a href="#" class="text-white hover:text-brand-orange"><i
+                                    class="fas fa-envelope text-2xl"></i></a>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy">Mohammed Rashid</h4>
+                    <p class="text-brand-orange font-medium">Sales Director</p>
+                </div>
+
+                <div class="text-center group">
+                    <div
+                        class="relative overflow-hidden rounded-xl mb-4 bg-gradient-to-br from-brand-orange/80 to-brand-orange h-64 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-white/20 text-8xl absolute"></i>
+                        <span class="text-white text-4xl font-bold relative z-10">SA</span>
+                        <div
+                            class="absolute inset-0 bg-brand-navy/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                            <a href="#" class="text-white hover:text-brand-orange"><i
+                                    class="fab fa-linkedin text-2xl"></i></a>
+                            <a href="#" class="text-white hover:text-brand-orange"><i
+                                    class="fas fa-envelope text-2xl"></i></a>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy">Sara Al Khouri</h4>
+                    <p class="text-brand-orange font-medium">Head of Logistics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office & Facilities Gallery -->
+    <section class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-brand-navy mb-4">Our Facilities</h2>
+                <p class="text-xl text-brand-gray max-w-3xl mx-auto">World-class infrastructure supporting our
+                    operations</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="col-span-2 row-span-2 relative overflow-hidden rounded-xl group">
+                    <img src="assets/images/Corporate Headquarters.png" alt="Corporate Headquarters"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-brand-navy to-transparent p-6">
+                        <h4 class="text-white text-xl font-bold">Corporate Headquarters</h4>
+                        <p class="text-gray-300">Dubai, UAE</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl group">
+                    <img src="assets/images/wear house.jpg" alt="Warehouse"
+                        class="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-brand-navy/40 flex items-center justify-center">
+                        <span class="text-white font-bold">Warehouse</span>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl group">
+                    <img src="assets/images/Office Space.jpg" alt="Office Space"
+                        class="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-brand-navy/40 flex items-center justify-center">
+                        <span class="text-white font-bold">Office Space</span>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl group">
+                    <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=400&h=250&fit=crop"
+                        alt="Showroom"
+                        class="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-brand-navy/40 flex items-center justify-center">
+                        <span class="text-white font-bold">Showroom</span>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl group">
+                    <img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?w=400&h=250&fit=crop"
+                        alt="Meeting Room"
+                        class="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-brand-navy/40 flex items-center justify-center">
+                        <span class="text-white font-bold">Meeting Room</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-navy text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <img src="assets/images/logo.jpeg" alt="Manar Al Hikamah Trading LLC" class="h-12 w-auto mb-4">
+                    <p class="text-gray-300 mb-4">Building excellence through quality and innovation.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-brand-orange"><i
+                                class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-brand-orange"><i
+                                class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-brand-orange"><i
+                                class="fab fa-linkedin-in text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-brand-orange"><i
+                                class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-brand-orange">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-brand-orange">About Us</a></li>
+                        <li><a href="materials.html" class="text-gray-300 hover:text-brand-orange">Materials</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-brand-orange">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-brand-orange">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-brand-orange mr-3"></i>
+                            <span class="text-gray-300 text-sm">Dubai, UAE</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-brand-orange mr-3"></i>
+                            <span class="text-gray-300 text-sm">+971 4 123 4567</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-brand-orange mr-3"></i>
+                            <span class="text-gray-300 text-sm">info@manarhikamah.ae</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-300 text-sm">&copy; 2024 Manar Al Hikamah Trading LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

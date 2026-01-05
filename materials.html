@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materials - Manar Al Hikamah Trading LLC</title>
+    <meta name="description"
+        content="Comprehensive range of construction materials including steel, building materials, tiles, pipes, and more from Manar Al Hikamah Trading LLC.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-navy': '#1e3a5f',
+                        'brand-orange': '#f97316',
+                        'brand-light': '#f8fafc',
+                        'brand-gray': '#64748b'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center gap-2 group">
+                        <div class="logo-icon relative w-10 h-10 flex items-center justify-center">
+                            <div class="absolute inset-0 flex items-end justify-center gap-0.5">
+                                <div
+                                    class="w-2 h-6 bg-gradient-to-t from-brand-navy to-brand-navy/80 rounded-t-sm group-hover:h-7 transition-all duration-300">
+                                </div>
+                                <div
+                                    class="w-3 h-8 bg-gradient-to-t from-brand-orange to-brand-orange/80 rounded-t-sm group-hover:h-9 transition-all duration-300">
+                                </div>
+                                <div
+                                    class="w-2 h-5 bg-gradient-to-t from-brand-navy to-brand-navy/80 rounded-t-sm group-hover:h-6 transition-all duration-300">
+                                </div>
+                            </div>
+                            <div class="absolute top-1 left-0 right-0 h-0.5 bg-brand-orange/60"></div>
+                        </div>
+                        <div class="hidden sm:flex flex-col leading-none">
+                            <span class="text-brand-navy font-bold text-sm tracking-tight">MANAR AL HIKAMAH</span>
+                            <span class="text-brand-orange text-[10px] font-medium tracking-wider">TRADING LLC</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                    <a href="about.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                    <div class="relative dropdown">
+                        <button class="text-brand-orange px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                            Materials <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div
+                            class="dropdown-menu absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg py-1 opacity-0 invisible transition-all duration-200">
+                            <a href="materials/steel-products.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Steel
+                                & Basic Steel Products</a>
+                            <a href="materials/construction-materials.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Building
+                                & Construction Materials</a>
+                            <a href="materials/metal-products.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Building
+                                Metal Products</a>
+                            <a href="materials/tiles-flooring.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Tiles
+                                & Flooring Materials</a>
+                            <a href="materials/pipes-fittings.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Pipes
+                                & Fittings</a>
+                            <a href="materials/scaffolds.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Scaffolds</a>
+                            <a href="materials/wooden-products.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Wooden
+                                Products</a>
+                        </div>
+                    </div>
+                    <div class="relative dropdown">
+                        <button
+                            class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                            Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div
+                            class="dropdown-menu absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg py-1 opacity-0 invisible transition-all duration-200">
+                            <a href="services/trading-solutions.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Trading
+                                Solutions</a>
+                            <a href="services/supply-chain.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Supply
+                                Chain Management</a>
+                            <a href="services/logistics.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Logistics
+                                & Distribution</a>
+                            <a href="services/consulting.html"
+                                class="block px-4 py-2 text-sm text-brand-navy hover:bg-brand-light hover:text-brand-orange">Project
+                                Consulting</a>
+                        </div>
+                    </div>
+                    <a href="certifications.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Certifications</a>
+                    <a href="gallery.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Gallery</a>
+                    <a href="contact.html"
+                        class="text-brand-navy hover:text-brand-orange px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header with Background Image -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-brand-navy to-blue-900 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <img src="assets/images/Building-&-Construction-Materials-3.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-bold text-white mb-4">Premium Construction Materials</h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">Comprehensive range of high-quality materials for all
+                your construction and industrial needs</p>
+        </div>
+    </section>
+
+    <!-- Featured Materials Banner -->
+    <section class="py-8 bg-brand-orange">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap items-center justify-center gap-8 text-white">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-check-circle text-2xl"></i>
+                    <span class="font-medium">ISO Certified Products</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-truck text-2xl"></i>
+                    <span class="font-medium">Fast Delivery</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-tags text-2xl"></i>
+                    <span class="font-medium">Competitive Prices</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-headset text-2xl"></i>
+                    <span class="font-medium">24/7 Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Steel Products -->
+                <div
+                    class="material-card bg-brand-light rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="assets/images/Steel-&-Basic-Steel-Products-4.jpg" alt="Steel Products"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/60 to-transparent"></div>
+                        <i class="fas fa-industry text-white text-4xl absolute bottom-4 right-4 opacity-80"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-brand-navy mb-2">Steel & Basic Steel Products</h3>
+                        <p class="text-brand-gray mb-4">High-grade steel materials including structural steel,
+                            reinforcement bars, steel sheets, and various steel profiles.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-brand-orange font-medium">License: 4752058</span>
+                            <a href="materials/steel-products.html"
+                                class="bg-brand-orange hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Construction Materials -->
+                <div
+                    class="material-card bg-brand-light rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="assets/images/Building-&-Construction-Materials-3.jpg" alt="Construction Materials"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/60 to-transparent"></div>
+                        <i class="fas fa-building text-white text-4xl absolute bottom-4 right-4 opacity-80"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-brand-navy mb-2">Building & Construction Materials</h3>
+                        <p class="text-brand-gray mb-4">Complete range of construction materials including cement,
+                            aggregates, blocks, and building supplies.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-brand-orange font-medium">License: 4752034</span>
+                            <a href="materials/construction-materials.html"
+                                class="bg-brand-orange hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Metal Products -->
+                <div
+                    class="material-card bg-brand-light rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="assets/images/Building-Metal-Products-3.jpg" alt="Metal Products"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/60 to-transparent"></div>
+                        <i class="fas fa-tools text-white text-4xl absolute bottom-4 right-4 opacity-80"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-brand-navy mb-2">Building Metal Products</h3>
+                        <p class="text-brand-gray mb-4">Specialized metal components, fixtures, and hardware for modern
+                            construction applications.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-brand-orange font-medium">License: 4752023</span>
+                            <a href="materials/metal-products.html"
+                                class="bg-brand-orange hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tiles & Flooring -->
+                <div
+                    class="material-card bg-brand-light rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="assets/images/tiles-1.jpg" alt="Tiles & Flooring" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/60 to-transparent"></div>
+                        <i class="fas fa-th-large text-white text-4xl absolute bottom-4 right-4 opacity-80"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-brand-navy mb-2">Tiles & Flooring Materials</h3>
+                        <p class="text-brand-gray mb-4">Premium tiles, flooring solutions, and surface materials for
+                            elegant and durable finishes.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-brand-orange font-medium">License: 4752011</span>
+                            <a href="materials/tiles-flooring.html"
+                                class="bg-brand-orange hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pipes & Fittings -->
+                <div
+                    class="material-card bg-brand-light rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="assets/images/Pipes-&-Fittings-4.jpg" alt="Pipes & Fittings"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/60 to-transparent"></div>
+                        <i class="fas fa-pipe text-white text-4xl absolute bottom-4 right-4 opacity-80"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-brand-navy mb-2">Pipes & Fittings</h3>
+                        <p class="text-brand-gray mb-4">Comprehensive piping solutions for plumbing, HVAC, and
+                            industrial systems with all fittings.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-brand-orange font-medium">License: 4752020</span>
+                            <a href="materials/pipes-fittings.html"
+                                class="bg-brand-orange hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scaffolds -->
+                <div
+                    class="material-card bg-brand-light rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="assets/images/Scaffolds-4.jpg" alt="Scaffolds" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/60 to-transparent"></div>
+                        <i class="fas fa-hard-hat text-white text-4xl absolute bottom-4 right-4 opacity-80"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-brand-navy mb-2">Scaffolds</h3>
+                        <p class="text-brand-gray mb-4">Safe and reliable scaffolding systems for construction and
+                            maintenance work with safety equipment.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-brand-orange font-medium">License: 4752028</span>
+                            <a href="materials/scaffolds.html"
+                                class="bg-brand-orange hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wooden Products -->
+                <div
+                    class="material-card bg-brand-light rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="h-48 bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center">
+                        <i class="fas fa-tree text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-brand-navy mb-2">Wooden Products</h3>
+                        <p class="text-brand-gray mb-4">Quality wooden materials including timber, plywood, and wooden
+                            construction components.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-brand-orange font-medium">License: 4752028</span>
+                            <a href="materials/wooden-products.html"
+                                class="bg-brand-orange hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Materials -->
+    <section class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-brand-navy mb-4">Why Choose Our Materials?</h2>
+                <p class="text-xl text-brand-gray max-w-3xl mx-auto">
+                    We source only the highest quality materials from trusted manufacturers worldwide.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-8 shadow-lg text-center">
+                    <div class="bg-brand-orange rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-certificate text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy mb-3">Certified Quality</h4>
+                    <p class="text-brand-gray">All materials come with international certifications and quality
+                        documentation.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg text-center">
+                    <div class="bg-brand-orange rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shipping-fast text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy mb-3">Fast Delivery</h4>
+                    <p class="text-brand-gray">Efficient logistics network ensuring timely delivery across the UAE.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg text-center">
+                    <div class="bg-brand-orange rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-dollar-sign text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy mb-3">Competitive Pricing</h4>
+                    <p class="text-brand-gray">Best value for money without compromising on quality standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-brand-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4">Ready to Source Premium Materials?</h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                Contact our materials specialists for competitive quotes and expert guidance on your project
+                requirements.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html"
+                    class="bg-brand-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
+                    Request Quote
+                </a>
+                <a href="tel:+97141234567"
+                    class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-brand-navy px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105">
+                    Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-navy text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <img src="assets/images/logo.jpeg" alt="Manar Al Hikamah Trading LLC" class="h-12 w-auto mb-4">
+                    <p class="text-gray-300 mb-4">Building excellence through quality and innovation.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-brand-orange"><i
+                                class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-brand-orange"><i
+                                class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-brand-orange"><i
+                                class="fab fa-linkedin-in text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-brand-orange"><i
+                                class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Materials</h3>
+                    <ul class="space-y-2">
+                        <li><a href="materials/steel-products.html" class="text-gray-300 hover:text-brand-orange">Steel
+                                Products</a></li>
+                        <li><a href="materials/construction-materials.html"
+                                class="text-gray-300 hover:text-brand-orange">Construction Materials</a></li>
+                        <li><a href="materials/metal-products.html" class="text-gray-300 hover:text-brand-orange">Metal
+                                Products</a></li>
+                        <li><a href="materials/tiles-flooring.html" class="text-gray-300 hover:text-brand-orange">Tiles
+                                & Flooring</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-brand-orange mr-3"></i>
+                            <span class="text-gray-300 text-sm">Dubai, UAE</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-brand-orange mr-3"></i>
+                            <span class="text-gray-300 text-sm">+971 4 123 4567</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-brand-orange mr-3"></i>
+                            <span class="text-gray-300 text-sm">info@manarhikamah.ae</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-300 text-sm">&copy; 2024 Manar Al Hikamah Trading LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
