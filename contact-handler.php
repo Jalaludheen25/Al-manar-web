@@ -1,5 +1,5 @@
 <?php
-// Contact Form Handler for Manar Al Hikamah Trading LLC
+// Contact Form Handler for MANAR AL HIKMAH BUILDING MATERIALS TRADING L.L.C
 header('Content-Type: application/json');
 
 // Enable error reporting for debugging (disable in production)
@@ -59,11 +59,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     
     // Prepare email
-    $to = 'info@manarhikamah.ae'; // Change this to your actual email
+    $to = 'sales@mahtradings.com'; // Change this to your actual email
     $emailSubject = 'New Contact Form Submission - ' . ucfirst($subject);
     
     // Email body
-    $emailBody = "New contact form submission from Manar Al Hikamah Trading LLC website\n\n";
+    $emailBody = "New contact form submission from MANAR AL HIKMAH BUILDING MATERIALS TRADING L.L.C website\n\n";
     $emailBody .= "Contact Details:\n";
     $emailBody .= "----------------\n";
     $emailBody .= "Name: " . $firstName . " " . $lastName . "\n";
@@ -94,20 +94,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $response['message'] = 'Thank you for contacting us! We will get back to you within 24 hours.';
         
         // Optional: Send auto-reply to customer
-        $autoReplySubject = 'Thank you for contacting Manar Al Hikamah Trading LLC';
+        $autoReplySubject = 'Thank you for contacting MANAR AL HIKMAH BUILDING MATERIALS TRADING L.L.C';
         $autoReplyBody = "Dear " . $firstName . " " . $lastName . ",\n\n";
-        $autoReplyBody .= "Thank you for reaching out to Manar Al Hikamah Trading LLC. We have received your message and will respond to your inquiry within 24 hours.\n\n";
+        $autoReplyBody .= "Thank you for reaching out to MANAR AL HIKMAH BUILDING MATERIALS TRADING L.L.C. We have received your message and will respond to your inquiry within 24 hours.\n\n";
         $autoReplyBody .= "Your message:\n";
         $autoReplyBody .= $message . "\n\n";
-        $autoReplyBody .= "If you need immediate assistance, please call us at +971 4 123 4567.\n\n";
+        $autoReplyBody .= "If you need immediate assistance, please call us at +971 54 300 7146.\n\n";
         $autoReplyBody .= "Best regards,\n";
-        $autoReplyBody .= "Manar Al Hikamah Trading LLC\n";
+        $autoReplyBody .= "MANAR AL HIKMAH BUILDING MATERIALS TRADING L.L.C\n";
         $autoReplyBody .= "Dubai, United Arab Emirates\n";
         $autoReplyBody .= "www.manarhikamah.ae\n";
         
         $autoReplyHeaders = array();
-        $autoReplyHeaders[] = 'From: Manar Al Hikamah Trading LLC <info@manarhikamah.ae>';
-        $autoReplyHeaders[] = 'Reply-To: info@manarhikamah.ae';
+        $autoReplyHeaders[] = 'From: MANAR AL HIKMAH BUILDING MATERIALS TRADING L.L.C <sales@mahtradings.com>';
+        $autoReplyHeaders[] = 'Reply-To: sales@mahtradings.com';
         $autoReplyHeaders[] = 'X-Mailer: PHP/' . phpversion();
         $autoReplyHeaders[] = 'MIME-Version: 1.0';
         $autoReplyHeaders[] = 'Content-Type: text/plain; charset=UTF-8';
